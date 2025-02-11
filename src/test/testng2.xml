@@ -1,0 +1,15 @@
+<suite name="Parallel Suite" parallel="methods" thread-count="3">
+    <test name="AuthTest">
+        <classes>
+            <class name="com.qacart.todo.testcases.RegisterTest"/>
+            <class name="com.qacart.todo.testcases.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="TodoTest">
+        <classes>
+            <class name="com.qacart.todo.testcases.AddTodoCookiesTest"/>
+            <class name="com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest"/>
+        </classes>
+    </test>
+</suite>

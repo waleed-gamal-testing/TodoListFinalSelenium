@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-11T07:31:33 EET" name="Surefire suite" finished-at="2025-02-11T07:32:22 EET" duration-ms="49116">
+    <groups>
+    </groups>
+    <test started-at="2025-02-11T07:31:33 EET" name="Surefire test" finished-at="2025-02-11T07:32:22 EET" duration-ms="49116">
+      <class name="com.qacart.todo.testcases.DeleteTodoItemIndependentTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.qacart.todo.testcases.DeleteTodoItemIndependentTest@74e28667]" started-at="2025-02-11T07:31:56 EET" name="setup" finished-at="2025-02-11T07:31:57 EET" duration-ms="1259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qacart.todo.testcases.DeleteTodoItemIndependentTest.checkAbleToDeleteTodoTask2() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkAbleToDeleteTodoTask2()[pri:0, instance:com.qacart.todo.testcases.DeleteTodoItemIndependentTest@74e28667]" started-at="2025-02-11T07:31:57 EET" name="checkAbleToDeleteTodoTask2" description="Delete todo item that not depend on user state or app state dynamically using API " finished-at="2025-02-11T07:32:01 EET" duration-ms="4129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAbleToDeleteTodoTask2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testcases.DeleteTodoItemIndependentTest@74e28667]" started-at="2025-02-11T07:32:01 EET" name="tearDown" finished-at="2025-02-11T07:32:01 EET" duration-ms="471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAbleToDeleteTodoTask2 status=SUCCESS method=DeleteTodoItemIndependentTest.checkAbleToDeleteTodoTask2()[pri:0, instance:com.qacart.todo.testcases.DeleteTodoItemIndependentTest@74e28667] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qacart.todo.testcases.DeleteTodoItemIndependentTest -->
+      <class name="com.qacart.todo.testcases.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.qacart.todo.testcases.LoginTest@663c9e7a]" started-at="2025-02-11T07:32:11 EET" name="setup" finished-at="2025-02-11T07:32:12 EET" duration-ms="1202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qacart.todo.testcases.LoginTest.shouldBeAbleLoginWithEmailAndPassword() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="shouldBeAbleLoginWithEmailAndPassword()[pri:0, instance:com.qacart.todo.testcases.LoginTest@663c9e7a]" started-at="2025-02-11T07:32:12 EET" name="shouldBeAbleLoginWithEmailAndPassword" description="Test the login functionality using email and password and click on submit btn" finished-at="2025-02-11T07:32:15 EET" duration-ms="2772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBeAbleLoginWithEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testcases.LoginTest@663c9e7a]" started-at="2025-02-11T07:32:15 EET" name="tearDown" finished-at="2025-02-11T07:32:15 EET" duration-ms="431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldBeAbleLoginWithEmailAndPassword status=SUCCESS method=LoginTest.shouldBeAbleLoginWithEmailAndPassword()[pri:0, instance:com.qacart.todo.testcases.LoginTest@663c9e7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qacart.todo.testcases.LoginTest -->
+      <class name="com.qacart.todo.base.BaseTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.qacart.todo.base.BaseTest@543295b0]" started-at="2025-02-11T07:31:33 EET" name="setUpReport" finished-at="2025-02-11T07:31:33 EET" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.qacart.todo.base.BaseTest@543295b0]" started-at="2025-02-11T07:32:22 EET" name="tearDownReport" finished-at="2025-02-11T07:32:23 EET" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- com.qacart.todo.base.BaseTest -->
+      <class name="com.qacart.todo.testcases.RegisterTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.qacart.todo.testcases.RegisterTest@19e4653c]" started-at="2025-02-11T07:32:15 EET" name="setup" finished-at="2025-02-11T07:32:17 EET" duration-ms="1532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qacart.todo.testcases.RegisterTest.registerWithValidCredentials() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerWithValidCredentials()[pri:0, instance:com.qacart.todo.testcases.RegisterTest@19e4653c]" started-at="2025-02-11T07:32:17 EET" name="registerWithValidCredentials" description="register using fake data" finished-at="2025-02-11T07:32:20 EET" duration-ms="3199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testcases.RegisterTest@19e4653c]" started-at="2025-02-11T07:32:20 EET" name="tearDown" finished-at="2025-02-11T07:32:20 EET" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registerWithValidCredentials status=SUCCESS method=RegisterTest.registerWithValidCredentials()[pri:0, instance:com.qacart.todo.testcases.RegisterTest@19e4653c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qacart.todo.testcases.RegisterTest -->
+      <class name="com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest@1cf6d1be]" started-at="2025-02-11T07:32:01 EET" name="setup" finished-at="2025-02-11T07:32:03 EET" duration-ms="1874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest.checkAbleToDeleteTodoTask() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkAbleToDeleteTodoTask()[pri:0, instance:com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest@1cf6d1be]" started-at="2025-02-11T07:32:03 EET" name="checkAbleToDeleteTodoTask" description="Delete todo item that depend on user state or app state manually adding task" finished-at="2025-02-11T07:32:10 EET" duration-ms="6992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAbleToDeleteTodoTask -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest@1cf6d1be]" started-at="2025-02-11T07:32:10 EET" name="tearDown" finished-at="2025-02-11T07:32:11 EET" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAbleToDeleteTodoTask status=SUCCESS method=DependOnUserStateDeleteTodoTest.checkAbleToDeleteTodoTask()[pri:0, instance:com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest@1cf6d1be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qacart.todo.testcases.DependOnUserStateDeleteTodoTest -->
+      <class name="com.qacart.todo.testcases.TodoTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.qacart.todo.testcases.TodoTest@53fb3dab]" started-at="2025-02-11T07:32:20 EET" name="setup" finished-at="2025-02-11T07:32:21 EET" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qacart.todo.testcases.TodoTest.addTodoItem() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addTodoItem()[pri:0, instance:com.qacart.todo.testcases.TodoTest@53fb3dab]" started-at="2025-02-11T07:32:21 EET" name="addTodoItem" finished-at="2025-02-11T07:32:22 EET" duration-ms="692" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[something went wrong in the request ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: something went wrong in the request 
+at com.qacart.todo.api.RegisterApi.register(RegisterApi.java:53)
+at com.qacart.todo.testcases.TodoTest.addTodoItem(TodoTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTodoItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testcases.TodoTest@53fb3dab]" started-at="2025-02-11T07:32:22 EET" name="tearDown" finished-at="2025-02-11T07:32:22 EET" duration-ms="329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTodoItem status=FAILURE method=TodoTest.addTodoItem()[pri:0, instance:com.qacart.todo.testcases.TodoTest@53fb3dab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qacart.todo.testcases.TodoTest -->
+      <class name="com.qacart.todo.testcases.AddTodoCookiesTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.qacart.todo.testcases.AddTodoCookiesTest@7161d8d1]" started-at="2025-02-11T07:31:33 EET" name="setup" finished-at="2025-02-11T07:31:42 EET" duration-ms="9086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qacart.todo.testcases.AddTodoCookiesTest.addTodoItem() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addTodoItem()[pri:0, instance:com.qacart.todo.testcases.AddTodoCookiesTest@7161d8d1]" started-at="2025-02-11T07:31:43 EET" name="addTodoItem" description="adding todo item that depend on Api not ui" finished-at="2025-02-11T07:31:55 EET" duration-ms="11908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTodoItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testcases.AddTodoCookiesTest@7161d8d1]" started-at="2025-02-11T07:31:55 EET" name="tearDown" finished-at="2025-02-11T07:31:56 EET" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTodoItem status=SUCCESS method=AddTodoCookiesTest.addTodoItem()[pri:0, instance:com.qacart.todo.testcases.AddTodoCookiesTest@7161d8d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qacart.todo.testcases.AddTodoCookiesTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

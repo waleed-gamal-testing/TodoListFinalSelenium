@@ -1,99 +1,111 @@
-**To-Do List Application Automation Testing Framework**
-Overview
-This project provides a comprehensive Automation Testing Framework for a To-Do List application. The framework is built using Selenium WebDriver, TestNG, and follows best practices such as Page Object Model (POM), data-driven testing, and state-independent testing to ensure reliability and scalability.
 
-Key features:
 
-Login, Register, Add, and Delete Tasks automated tests.
-State-independent testing ensuring tests do not depend on user/app state.
-Cross-browser support (Chrome, Firefox, Edge, etc.).
-Parallel test execution for faster feedback.
-Reporting with Allure and screenshots for each test.
-GitHub Actions CI/CD integration to run tests in the cloud.
-Project Structure
-Here’s a breakdown of the project’s structure:
-To-Do-List-Automation-Testing/
-│
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── todoapp/
-│   │               ├── base/                   # Base classes for setup and teardown
-│   │               ├── pages/                  # Page Object Model classes (POM)
-│   │               ├── tests/                  # Test classes and test scenarios
-│   │               ├── utils/                  # Utility classes (e.g., waits, file handling)
-│   │               ├── config/                 # Configuration classes (reading from property files)
-│   │               └── api/                    # API testing classes (RestAssured integration)
-│   │
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── todoapp/
-│                   ├── tests/                  # TestNG test cases and data-driven tests
-│                   └── data/                   # Test data (e.g., JSON, Excel files)
-│
-├── .gitignore
-├── allure-results/                               # Allure report results
-├── .github/
-│   └── workflows/
-│       └── selenium-tests.yml                    # GitHub Actions workflow to run tests on cloud
-├── pom.xml                                        # Maven build file (dependencies, plugins)
-└── README.md                                      # This README file
-Setup & Installation
-Prerequisites
+# 🚀 To-Do List Automation Testing Framework
+
+## Overview
+This project provides a **comprehensive Automation Testing Framework** for a **To-Do List application**. Built with **Selenium WebDriver**, **TestNG**, and best practices such as **Page Object Model (POM)**, **data-driven testing**, and **state-independent testing**, it ensures **scalable**, **reliable**, and **efficient** test automation for web applications.
+
+Key Features:
+- **Automated tests** for **Login**, **Registration**, **Add Task**, and **Delete Task**.
+- **State-independent testing**, ensuring tests don’t depend on previous app states.
+- **Cross-browser support** (Chrome, Firefox, Edge).
+- **Parallel execution** for faster feedback.
+- **Allure Reporting** with **screenshots**.
+- **CI/CD integration** with **GitHub Actions** to run tests in the cloud.
+
+---
+
+## Project Structure
+
+Here’s the structure of the project:
+
+To-Do-List-Automation-Testing/ │ ├── src/ │ ├── main/ │ │ └── java/ │ │ └── com/ │ │ └── todoapp/ │ │ ├── base/ # Base classes for setup and teardown │ │ ├── pages/ # Page Object Model (POM) classes │ │ ├── tests/ # Test classes and scenarios │ │ ├── utils/ # Utility classes (e.g., waits, file handling) │ │ ├── config/ # Configuration classes (properties files) │ │ └── api/ # API testing classes (RestAssured integration) │ │ │ └── test/ │ └── java/ │ └── com/ │ └── todoapp/ │ ├── tests/ # TestNG test cases │ └── data/ # Test data (JSON, Excel files) │ ├── .gitignore ├── allure-results/ # Allure report results ├── .github/ │ └── workflows/ │ └── selenium-tests.yml # GitHub Actions workflow file ├── pom.xml # Maven build file └── README.md # This README file
+
+yaml
+Copy
+Edit
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+
 Before getting started, make sure you have the following tools installed:
 
-Java 11+
-Maven (for dependency management and build automation)
-Git
-IDE (e.g., IntelliJ IDEA, Eclipse)
-WebDriver for browsers (e.g., ChromeDriver, GeckoDriver)
-1. Clone the repository:
-Clone the repository to your local machine using Git:
+- **Java 11+**
+- **Maven** (for dependency management)
+- **Git** (for version control)
+- **IDE** (e.g., IntelliJ IDEA, Eclipse)
+- **WebDriver** for browsers (e.g., ChromeDriver, GeckoDriver)
+
+### 1. Clone the repository
+
+Clone the repository to your local machine:
+
+```bash
 git clone https://github.com/your-username/To-Do-List-Automation-Testing.git
 cd To-Do-List-Automation-Testing
-2. Install dependencies:
+2. Install dependencies
 Install the required dependencies using Maven:
+
+bash
+Copy
+Edit
 mvn clean install
-3. Configure WebDriver:
-Make sure the WebDriver for the browser you want to use (Chrome, Firefox, etc.) is available on your system. You can download the WebDriver from the official browser vendor's site, or you can manage it using a WebDriver manager.
-Key Features
+3. Configure WebDriver
+Make sure the appropriate WebDriver for the browser you want to use (e.g., ChromeDriver, GeckoDriver) is available on your system. You can download WebDriver from the respective browser vendor’s website or manage it via a WebDriver manager.
+
+Key Features & Architecture
 1. Page Object Model (POM)
-POM Design Pattern is used to organize the test code into different layers for maintainability and scalability.
-Base Page Class provides common functionality (e.g., waiting for elements, interacting with UI elements).
-Each page of the To-Do List application has its own Page Object class, containing methods to interact with that page’s elements.
+The POM Design Pattern is implemented to separate UI interactions from the test logic. Each page in the application has a corresponding Page Object class that contains methods for interacting with the page's elements.
+
+Base Page Class provides common functionality.
+Individual Page Objects represent distinct pages (e.g., Login, Todo List).
 2. Driver Management (Driver Holder & Factory)
-The framework includes a Driver Factory to create WebDriver instances dynamically.
-Driver Holder ensures the driver is shared across tests and cleaned up at the end of each test.
-Supports multiple browsers for cross-browser testing (Chrome, Firefox, Edge).
+Driver Factory dynamically creates WebDriver instances.
+Driver Holder shares WebDriver instances across tests and ensures proper cleanup.
+Cross-browser support: Chrome, Firefox, Edge.
 3. Test Data Management
-Test data is managed using POJO classes, JSON files, and Excel files.
-The tests can be executed with different sets of data using data-driven testing, making the tests more flexible and reusable.
-State-independent tests ensure that each test starts with a clean slate. Login and registration are handled within each test, ensuring that the test cases are not dependent on the app’s state.
-4. API Testing with RestAssured
-RestAssured is integrated to handle API requests for logging in, registering users, and interacting with the To-Do List.
-State independence is maintained by ensuring API requests are independent of the UI state, creating and deleting users as needed for each test run.
-5. Test Execution
-TestNG is used for managing and executing test cases. The framework supports both method-level parallel execution and class-level parallel execution for faster feedback.
-Tests can be executed individually or in groups based on methods or classes.
-GitHub Actions is integrated to run Selenium tests in the cloud with continuous integration and continuous testing capabilities.
-6. Reporting
-Allure Reporting provides a rich, detailed report of the test execution.
-Screenshots are captured after every test method and included in the Allure report for better debugging.
-Test logs are also attached, allowing you to view detailed information about each test.
-How to Run the Tests
+Test data is managed through:
+
+POJO classes for structured data.
+JSON and Excel files for data-driven testing.
+4. State-Independent Testing
+Each test case is state-independent. Login and registration are reset for each test, ensuring no dependency on previous test states.
+
+Tests start fresh: no user data or app state dependencies.
+Each test is isolated.
+5. API Testing with RestAssured
+RestAssured is integrated to handle API requests for user login, registration, and interaction with the To-Do List.
+State-independent API tests ensure login and registration do not interfere with UI tests.
+6. Parallel Test Execution with TestNG
+TestNG is used for managing and executing tests:
+
+Parallel execution improves test efficiency.
+Tests are configured for method-level or class-level parallel execution.
+7. Reporting with Allure
+Screenshots are captured after every test method and included in Allure reports.
+Allure Reporting generates detailed, visually appealing test reports with logs, screenshots, and execution data.
+8. Continuous Integration (CI)
+The framework is integrated with GitHub Actions for cloud-based test execution:
+
+Automates tests on every push to the repository.
+Ensures continuous feedback and testing.
+How to Run Tests
 Running Tests Locally
-To run all tests locally using Maven, execute the following command:
+Run all tests locally using Maven:
 
 bash
 Copy
 Edit
 mvn clean test
-This will execute all the test cases configured in the TestNG XML.
-
 Running Tests in Parallel
-You can configure parallel execution in TestNG by modifying the testng.xml file. To run tests in parallel, use the following configuration in the XML:
+To enable parallel execution, modify the testng.xml configuration:
+
+xml
+Copy
+Edit
 <suite name="TodoAppSuite" parallel="tests" thread-count="4">
     <test name="LoginTests">
         <classes>
@@ -106,18 +118,25 @@ You can configure parallel execution in TestNG by modifying the testng.xml file.
         </classes>
     </test>
 </suite>
-his will run the tests concurrently across multiple threads.
+This will run the tests concurrently across multiple threads.
 
 Running Tests in CI with GitHub Actions
-GitHub Actions is configured to run Selenium tests on every commit.
-The workflow file (.github/workflows/selenium-tests.yml) runs the tests in the cloud, ensuring continuous testing on every push to the repository.
-Screenshot Capture and Allure Reports
-After each test method, a screenshot is taken and attached to the Allure report. The screenshots are stored in the allure-results folder.
+The GitHub Actions workflow is already set up in the .github/workflows/selenium-tests.yml file to run Selenium tests on every commit.
 
-To generate the Allure report:
+Generating Allure Reports
+After each test execution, Allure Reports are generated. To view the report:
+
+bash
+Copy
+Edit
 mvn allure:report
 mvn allure:serve
-**Conclusion**
-This To-Do List Automation Testing Framework ensures that all critical functionalities—login, register, add tasks, and delete tasks—are thoroughly tested with state-independent, parallel execution. The integration of RestAssured for API testing and Allure for reporting makes the framework both dynamic and easy to maintain.
+This will open the Allure report in your browser.
 
-This framework is designed for both scalability and reliability, ensuring that tests are repeatable, consistent, and fast—perfect for continuous integration environments.
+Conclusion
+The To-Do List Automation Testing Framework ensures robust testing for core functionalities such as login, registration, adding tasks, and deleting tasks. By leveraging state-independent tests, parallel execution, and continuous integration with GitHub Actions, this framework is designed to provide fast, reliable, and scalable test automation.
+
+The integration of RestAssured for API testing and Allure for advanced reporting makes this framework both dynamic and easy to maintain.
+
+Contributing
+We welcome contributions to improve this framework. Feel free to fork the repository, create issues, and submit pull requests.
